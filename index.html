@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingdom Hotel</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -20,6 +21,7 @@
             color: #4A3F35;
             position: relative;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
         .logo {
             display: flex;
@@ -60,6 +62,7 @@
         }
         @media (max-width: 768px) {
             .nav-links {
+                z-index: 1000;
                 display: none;
                 flex-direction: column;
                 position: absolute;
@@ -90,7 +93,7 @@
         <span class="menu-toggle">&#9776;</span>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Rooms</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
             <li><a href="#">Dining</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Resturant</a></li>
@@ -99,6 +102,254 @@
         </ul>
     </nav>
     
+     <!-- home -->
+  
+  
+        <header class="hero">
+            <img src="assets/images/gold.jpg" alt="Kingdom Hotel" class="hero-img">
+            <div class="overlay">
+                <h1>Welcome to Kingdom Hotel</h1>
+                <p>Experience luxury and comfort in the heart of the city.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn primary">Book Now</a>
+                    <a href="#" class="btn secondary">Explore More</a>
+                </div>
+            </div>
+        </header>
+        
+  <!--part one  -->
+  <body>
+
+    <div class="section luxury-rooms">
+        <h2>Our Luxury Rooms</h2>
+        <p>Experience world-class luxury and comfort at Kingdom Hotel.</p>
+
+        <div class="room-container">
+            <div class="room">
+                <img src="assets/images/top.jpg" alt="Luxury Suite">
+                <div class="room-info">
+                    <h3>Luxury Suite</h3>
+                    <p>A spacious room with a king-size bed, ocean view, and top-class amenities.</p>
+                    <a href="#" class="btn">View More</a>
+                </div>
+            </div>
+
+            <div class="room">
+                <img src="assets/images/left.jpg" alt="Deluxe Room">
+                <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <p>Elegantly designed with modern interiors and a comfortable ambiance.</p>
+                    <a href="#" class="btn">View More</a>
+                </div>
+            </div>
+
+            <div class="room">
+                <img src="assets/images/bottom.jpg" alt="Executive Room">
+                <div class="room-info">
+                    <h3>Executive Room</h3>
+                    <p>Perfect for business travelers with a work desk and high-speed WiFi.</p>
+                    <a href="#" class="btn">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- rhied -->
+<div class="section amenities">
+    <h2>World-Class Amenities</h2>
+    <p>Enjoy top-tier facilities that redefine luxury and comfort.</p>
+
+    <div class="amenities-container">
+        <div class="amenity">
+            <img src="https://source.unsplash.com/100x100/?swimming-pool,resort" alt="Swimming Pool">
+            <h3>Infinity Pool</h3>
+            <p>Relax and refresh in our temperature-controlled infinity pool.</p>
+        </div>
+
+        <div class="amenity">
+            <img src="https://source.unsplash.com/100x100/?spa,wellness" alt="Spa & Wellness">
+            <h3>Spa & Wellness</h3>
+            <p>Experience ultimate relaxation with our world-class spa services.</p>
+        </div>
+
+        <div class="amenity">
+            <img src="https://source.unsplash.com/100x100/?restaurant,dining" alt="Fine Dining">
+            <h3>Fine Dining</h3>
+            <p>Savor delicious cuisines at our premium restaurants.</p>
+        </div>
+
+        <div class="amenity">
+            <img src="https://source.unsplash.com/100x100/?gym,fitness" alt="Gym & Fitness">
+            <h3>Gym & Fitness</h3>
+            <p>Stay fit with our fully equipped, modern gym.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .amenities {
+        background: #fff;
+        text-align: center;
+        padding: 60px 20px;
+    }
+    .amenities h2 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .amenities p {
+        font-size: 18px;
+        color: #777;
+        margin-bottom: 30px;
+    }
+    .amenities-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .amenity {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 200px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    .amenity:hover {
+        transform: scale(1.05);
+    }
+    .amenity img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .amenity h3 {
+        font-size: 20px;
+        color: #222;
+        margin-bottom: 8px;
+    }
+    .amenity p {
+        font-size: 14px;
+        color: #666;
+    }
+
+    @media (max-width: 768px) {
+        .amenities-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+
+
+<!-- lskjdf -->
+
+<section class="restaurant-section">
+    <h2>🍽️ Kingdom Hotel Restaurant</h2>
+    <p>Experience fine dining with exquisite cuisines, prepared by world-class chefs.</p>
+    
+    <div class="slider-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slider">
+            <img src="assets/images/f2.jpg" alt="Delicious Dish 1">
+            <img src="assets/images/as.jpg" alt="Delicious Dish 1">
+            <img src="assets/images/ksdfhsd.jpg" alt="Delicious Dish 1">
+            <img src="assets/images/f2.jpg" alt="Delicious Dish 1">
+            <img src="assets/images/as.jpg" alt="Delicious Dish 1">
+            <img src="assets/images/ksdfhsd.jpg" alt="Delicious Dish 1">
+            <!-- <img src="dish2.jpg" alt="Delicious Dish 2"> -->
+            <!-- <img src="dish3.jpg" alt="Delicious Dish 3"> -->
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+<script>
+    let slideIndex = 0;
+    function moveSlide(step) {
+        const slides = document.querySelectorAll(".slider img");
+        slideIndex = (slideIndex + step + slides.length) % slides.length;
+        document.querySelector(".slider").style.transform = `translateX(${-slideIndex * 100}%)`;
+    }
+</script>
+
+
+    <!-- footer -->
+     
+    <footer class="footer">
+        <div class="footer-column">
+            <img src="logo.png" alt="Hotel Logo" width="150">
+            <p>Feel free to reach out if you want to collaborate with us, or simply chat.</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Email Address">
+                <button>➤</button>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Store Directory</a></li>
+                <li><a href="#">Top Hotels</a></li>
+                <li><a href="#">Quick Links</a></li>
+                <li><a href="#">Important Links</a></li>
+                <li><a href="#">Insights</a></li>
+                <li><a href="#">Knowledge Center</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Muzaffarabad</h3>
+            <p>2464 Royal Ln. Mesa, <br> New Jersey 45463</p>
+            <p>0317-9220646</p>
+            <p>info@yourwebsite.com</p>
+
+            <h3>Azad Kashmir</h3>
+            <p>1901 Thorn Ridge Cir. <br> Shiloh, Hawaii 81063</p>
+            <p>(000) 000-0000</p>
+            <p>info@yourwebsite.com</p>
+        </div>
+    </footer>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <button class="back-to-top" onclick="scrollToTop()">⬆</button>
+
+    <script>
+        window.onscroll = function() {
+            let button = document.querySelector(".back-to-top");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <!-- footer -->
+
     <script>
         const toggleButton = document.querySelector(".menu-toggle");
         const navLinks = document.querySelector(".nav-links");
