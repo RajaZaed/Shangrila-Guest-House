@@ -1,10 +1,10 @@
 body {
-    background-color: #111;
+
     color: #fff;
 }
 
 .footer {
-    background: #292929;
+    background: #28C76F;
     padding: 40px 10%;
     display: flex;
     flex-wrap: wrap;
@@ -33,19 +33,19 @@ body {
 }
 
 .footer-column ul li a {
-    color: #bbb;
+    color: #000000;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .footer-column ul li a:hover {
-    color: #c29c6d;
+    color: #2b2b2b;
 }
 
 .newsletter {
     display: flex;
     align-items: center;
-    background: #2e2e2e;
+    background: #b6fad5;
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
@@ -56,12 +56,12 @@ body {
     background: none;
     border: none;
     outline: none;
-    color: #fff;
+    color: #000000;
     padding: 8px;
 }
 
 .newsletter button {
-    background: #c29c6d;
+    background: #28C76F;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -82,14 +82,14 @@ body {
 }
 
 .social-icons a:hover {
-    color: #c29c6d;
+    color: #28C76F;
 }
 
 .back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #c29c6d;
+    background: #28C76F;
     color: #fff;
     padding: 10px;
     border-radius: 50%;
@@ -356,7 +356,7 @@ html, body {
 }
 .btn {
     display: inline-block;
-    background: #cecece;
+    background: #28C76F;
     color: white;
     text-decoration: none;
     padding: 8px 15px;
@@ -389,7 +389,7 @@ h2 {
 }
 p {
     font-size: 1.2em;
-    color: #666;
+    color: #000000;
     margin-bottom: 20px;
 }
 .slider-container {
@@ -420,5 +420,5 @@ p {
 .prev { left: 10px; }
 .next { right: 10px; }
 .prev:hover, .next:hover {
-    background: black;
+    background: #20B162;
 }

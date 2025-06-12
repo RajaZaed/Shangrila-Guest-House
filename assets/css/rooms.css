@@ -39,7 +39,7 @@ body {
 }
 
 .footer-column ul li a:hover {
-    color: #c29c6d;
+    color: #024e24;
 }
 
 .newsletter {
@@ -61,7 +61,7 @@ body {
 }
 
 .newsletter button {
-    background: #c29c6d;
+    background: #70ffae;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -82,7 +82,7 @@ body {
 }
 
 .social-icons a:hover {
-    color: #c29c6d;
+    color: #024e24;
 }
 
 .back-to-top {
@@ -202,5 +202,5 @@ h1 {
 }
 
 .book-now:hover {
-    background-color: #5A5146; /* Dark Beige */
+    background-color: #024e24; /* Dark Beige */
 }
